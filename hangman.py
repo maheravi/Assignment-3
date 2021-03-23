@@ -17,7 +17,7 @@ while True:
     char = char.lower()
 
     if true_chars == word:
-        print('You win')
+        print('you wins')
         break
 
     if char in word:
