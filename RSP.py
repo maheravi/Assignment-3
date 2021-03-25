@@ -4,12 +4,6 @@ items = ["Rock", "Paper", "Scissors"]
 computer_score = 0
 user_score = 0
 
-index = random.randint(0, 2)
-
-computer_choice = items[index]
-
-computer_choice = random.choice(items)
-
 print("0- Rock")
 print("1- Paper")
 print("2- Scissors")
@@ -17,6 +11,9 @@ print("2- Scissors")
 user_choice_index = 0
 
 while True:
+    index = random.randint(0, 2)
+    computer_choice = items[index]
+    computer_choice = random.choice(items)
     user_choice_index = int(input())
     user_choice = items[user_choice_index]
     if computer_choice == "Rock" and user_choice == "Scissors":
