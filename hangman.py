@@ -16,16 +16,16 @@ while True:
     char = input('\nplease enter a character: ')
     char = char.lower()
 
-    if true_chars == word:
-        print('you wins')
-        break
-
     if char in word:
         true_chars.append(char)
     else:
         score -= 1
 
     print(score)
+    
+    if len(true_chars) == len(word):
+        print('You wins')
+        break
 
     if score == 0:
         print('Game Over')
